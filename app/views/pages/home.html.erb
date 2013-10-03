@@ -1,0 +1,20 @@
+<h1>Alten Poblete</h1><br />
+
+<table>
+    <thead>
+        <tr>
+            <th>Project Name</th>
+            <th>Description</th>
+            <th>URL</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% PROJECTS.each do |project, data| %>
+            <tr>
+                <td><%= project %></td>
+                <td><%= data['description'] %></td>
+                <td><a href="url"><%= link_to data['url'] %></a></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
